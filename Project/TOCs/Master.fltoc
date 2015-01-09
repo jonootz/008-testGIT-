@@ -2,6 +2,18 @@
 <CatapultToc
   Version="1">
   <TocEntry
-    Title="Topic"
-    Link="/Content/Reference Files/Initial Testing for Reference.htm" />
+    Title="JHHome_ISSUES!!!!!"
+    Link="/Content/ISSUES!!!!! file created on JHHome.htm" />
+  <TocEntry
+    Title="GitHub Matrix"
+    Link="/Content/Matrix_GitHub.htm" />
+  <TocEntry
+    Title="GitLab Matrix"
+    Link="/Content/Matrix_GitLab.htm" />
+  <TocEntry
+    Title="VisualStudio.com Matrix"
+    Link="/Content/Matrix_VSOnline.htm" />
+  <TocEntry
+    Title="CloudForgeGit Matrix"
+    Link="/Content/Matrix_CloudForgeGit.htm" />
 </CatapultToc>
