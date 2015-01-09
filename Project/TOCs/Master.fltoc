@@ -15,5 +15,5 @@
     Link="/Content/Matrix_VSOnline.htm" />
   <TocEntry
     Title="CloudForgeGit Matrix"
-    Link="/Content/Matrix_CloudForgeGit.htm" />
+    Link="/Content/Other Remote Matrix Topics/Matrix_CloudForgeGit.htm" />
 </CatapultToc>
