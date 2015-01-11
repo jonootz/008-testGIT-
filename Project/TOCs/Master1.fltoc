@@ -7,13 +7,4 @@
   <TocEntry
     Title="GitHub Matrix"
     Link="/Content/Matrix_GitHub.htm" />
-  <TocEntry
-    Title="GitLab Matrix"
-    Link="/Content/Other Remote Matrix Topics/Matrix_GitLab.htm" />
-  <TocEntry
-    Title="VisualStudio.com Matrix"
-    Link="/Content/Other Remote Matrix Topics/Matrix_VSOnline.htm" />
-  <TocEntry
-    Title="CloudForgeGit Matrix"
-    Link="/Content/Other Remote Matrix Topics/Matrix_CloudForgeGit.htm" />
 </CatapultToc>
