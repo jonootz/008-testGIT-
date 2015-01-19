@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="8577.666" MadCap:lastWidth="944">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="8315.666" MadCap:lastWidth="1100">
     <head>
         <link href="Resources/Rows.css" rel="stylesheet" MadCap:stylesheetType="table" />
     </head>
@@ -809,7 +809,7 @@
                 </tr>
                 <tr style="height: 15pt;" MadCap:conditions="SourceControl.multi-user,SourceControl.DetailedTesting" class="Body-Body2">
                     <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td class="BodyE-Column1-Body2">Both users make changes but don’t commit &gt; synchronize both with remote and make sure each don't see the other's changes</td>
+                    <td class="BodyE-Column1-Body2">Both users make changes but don’t commit &gt; synchronize both with remote and make sure each don't see the other's changes  (they never committed)</td>
                     <td class="BodyE-Column1-Body2">j</td>
                     <td class="BodyE-Column1-Body2">j</td>
                     <td class="BodyE-Column1-Body2">j</td>
@@ -818,18 +818,18 @@
                     <td class="BodyD-Column1-Body2">j</td>
                 </tr>
                 <tr style="height: 15pt;" MadCap:conditions="SourceControl.multi-user,SourceControl.DetailedTesting" class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">Both users make changes and commit &gt; both pull from remote and make sure each don't see the other's changes</td>
-                    <td class="BodyE-Column1-Body1">j</td>
-                    <td class="BodyE-Column1-Body1">j</td>
-                    <td class="BodyE-Column1-Body1">j</td>
-                    <td class="BodyE-Column1-Body1">j</td>
-                    <td class="BodyE-Column1-Body1">j</td>
-                    <td class="BodyD-Column1-Body1">j</td>
+                    <td class="BodyE-Column1-Body1" style="background-color: #ff0000;">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="background-color: #ff0000;">Both users make changes and commit &gt; synchronize both with remote and make sure 2nd to synch gets prompted to pull changes on server</td>
+                    <td class="BodyE-Column1-Body1" style="background-color: #ff0000;">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="background-color: #ff0000;">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="background-color: #ff0000;">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="background-color: #ff0000;">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="background-color: #ff0000;">&#160;</td>
+                    <td class="BodyD-Column1-Body1" style="background-color: #ff0000;">running into a lopp like 97282</td>
                 </tr>
                 <tr style="height: 15pt;" MadCap:conditions="SourceControl.multi-user,SourceControl.DetailedTesting" class="Body-Body2">
-                    <td class="BodyE-Column1-Body2">59</td>
-                    <td class="BodyE-Column1-Body2">Both users modify the same file and make non-conflicting changes. Both users commit changes then push. Auto resolve these changes and make sure both copies are updated correctly.</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">Both users make changes and commit &gt; both pull from remote and make sure each don't see the other's changes (they never pushed)</td>
                     <td class="BodyE-Column1-Body2">j</td>
                     <td class="BodyE-Column1-Body2">j</td>
                     <td class="BodyE-Column1-Body2">j</td>
@@ -838,50 +838,53 @@
                     <td class="BodyD-Column1-Body2">j</td>
                 </tr>
                 <tr style="height: 15pt;" MadCap:conditions="SourceControl.multi-user,SourceControl.DetailedTesting" class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">try above with sync</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="background-color: #ff0000;">59</td>
+                    <td class="BodyE-Column1-Body1" style="background-color: #ff0000;">Both users modify the same file and make non-conflicting changes. Both users commit changes then push. Auto resolve these changes and make sure both copies are updated correctly.</td>
+                    <td class="BodyE-Column1-Body1" style="background-color: #ff0000;">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="background-color: #ff0000;">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="background-color: #ff0000;">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="background-color: #ff0000;">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="background-color: #ff0000;">&#160;</td>
+                    <td class="BodyD-Column1-Body1" style="background-color: #ff0000;">97442</td>
                 </tr>
                 <tr style="height: 15pt;" MadCap:conditions="SourceControl.multi-user,SourceControl.DetailedTesting" class="Body-Body2">
-                    <td class="BodyE-Column1-Body2">60</td>
-                    <td class="BodyE-Column1-Body2">Both users modify the same file and make conflicting changes. Verify in the merge tool that the correct server version and local version is shown. Verify that the changes you make are applied to both copies.</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">try above with sync</td>
                     <td class="BodyE-Column1-Body2">&#160;</td>
                     <td class="BodyE-Column1-Body2">&#160;</td>
                     <td class="BodyE-Column1-Body2">&#160;</td>
                     <td class="BodyE-Column1-Body2">&#160;</td>
                     <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td class="BodyD-Column1-Body2">bug 97390</td>
+                    <td class="BodyD-Column1-Body2">&#160;</td>
                 </tr>
                 <tr style="height: 15pt;" MadCap:conditions="SourceControl.multi-user,SourceControl.DetailedTesting" class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">61</td>
-                    <td class="BodyE-Column1-Body1">
+                    <td class="BodyE-Column1-Body1">60</td>
+                    <td class="BodyE-Column1-Body1">Both users modify the same file and make conflicting changes. Verify in the merge tool that the correct server version and local version is shown. Verify that the changes you make are applied to both copies.</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyD-Column1-Body1">bug 97390</td>
+                </tr>
+                <tr style="height: 15pt;" MadCap:conditions="SourceControl.multi-user,SourceControl.DetailedTesting" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="background-color: #ff0000;">61</td>
+                    <td class="BodyE-Column1-Body2" style="background-color: #ff0000;">
                         <p>Both users modify the same file and make conflicting changes. Have one user choose to undo local changes. Verify the local copy is updated correctly.</p>
                     </td>
-                    <td class="BodyE-Column1-Body1">--`</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1">&#160;</td>
-                </tr>
-                <tr style="height: 15pt;" MadCap:conditions="SourceControl.multi-user,SourceControl.DetailedTesting" class="Body-Body2">
-                    <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td class="BodyE-Column1-Body2">try above with Sync</td>
-                    <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td class="BodyD-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2" style="background-color: #ff0000;">--`</td>
+                    <td class="BodyE-Column1-Body2" style="background-color: #ff0000;">&#160;</td>
+                    <td class="BodyE-Column1-Body2" style="background-color: #ff0000;">&#160;</td>
+                    <td class="BodyE-Column1-Body2" style="background-color: #ff0000;">&#160;</td>
+                    <td class="BodyE-Column1-Body2" style="background-color: #ff0000;">&#160;</td>
+                    <td class="BodyD-Column1-Body2" style="background-color: #ff0000;">
+                        <p>UNDO&#160;&gt;&#160;Conflicts resolved &gt;&#160;message appears: "Error occurred in LibGit2Sharp : 1 uncommitted change would be overwritten by merge" &gt; COMMIT&#160;GOOD</p>
+                        <p>&gt;&#160;PUSH&#160;&gt;&#160;TOLD&#160;TO&#160;PULL&#160;AGAIN</p>
+                    </td>
                 </tr>
                 <tr style="height: 15pt;" MadCap:conditions="SourceControl.multi-user,SourceControl.DetailedTesting" class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">62</td>
-                    <td class="BodyE-Column1-Body1">Both users modify the same file and make conflicting changes. Have one user choose to discard external changes. Verify the server copy is updated correctly.</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1">try above with Sync</td>
                     <td class="BodyE-Column1-Body1">&#160;</td>
                     <td class="BodyE-Column1-Body1">&#160;</td>
                     <td class="BodyE-Column1-Body1">&#160;</td>
@@ -890,8 +893,8 @@
                     <td class="BodyD-Column1-Body1">&#160;</td>
                 </tr>
                 <tr style="height: 15pt;" MadCap:conditions="SourceControl.multi-user,SourceControl.DetailedTesting" class="Body-Body2">
-                    <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td class="BodyE-Column1-Body2">try above with Sync</td>
+                    <td class="BodyE-Column1-Body2">62</td>
+                    <td class="BodyE-Column1-Body2">Both users modify the same file and make conflicting changes. Have one user choose to discard external changes. Verify the server copy is updated correctly.</td>
                     <td class="BodyE-Column1-Body2">&#160;</td>
                     <td class="BodyE-Column1-Body2">&#160;</td>
                     <td class="BodyE-Column1-Body2">&#160;</td>
@@ -900,8 +903,8 @@
                     <td class="BodyD-Column1-Body2">&#160;</td>
                 </tr>
                 <tr style="height: 15pt;" MadCap:conditions="SourceControl.multi-user,SourceControl.DetailedTesting" class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">63</td>
-                    <td class="BodyE-Column1-Body1">Both users modify the same file. One user deletes the file , the other user checks in the file before doing a Pull.</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1">try above with Sync</td>
                     <td class="BodyE-Column1-Body1">&#160;</td>
                     <td class="BodyE-Column1-Body1">&#160;</td>
                     <td class="BodyE-Column1-Body1">&#160;</td>
@@ -910,8 +913,8 @@
                     <td class="BodyD-Column1-Body1">&#160;</td>
                 </tr>
                 <tr style="height: 15pt;" MadCap:conditions="SourceControl.multi-user,SourceControl.DetailedTesting" class="Body-Body2">
-                    <td class="BodyE-Column1-Body2">64</td>
-                    <td class="BodyE-Column1-Body2">Both users modify the same file. One user renames the file , then the second user commits the file before doing a Pull.</td>
+                    <td class="BodyE-Column1-Body2">63</td>
+                    <td class="BodyE-Column1-Body2">Both users modify the same file. One user deletes the file , the other user checks in the file before doing a Pull.</td>
                     <td class="BodyE-Column1-Body2">&#160;</td>
                     <td class="BodyE-Column1-Body2">&#160;</td>
                     <td class="BodyE-Column1-Body2">&#160;</td>
@@ -920,8 +923,8 @@
                     <td class="BodyD-Column1-Body2">&#160;</td>
                 </tr>
                 <tr style="height: 15pt;" MadCap:conditions="SourceControl.multi-user,SourceControl.DetailedTesting" class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">65</td>
-                    <td class="BodyE-Column1-Body1">Both users have files modified and one user renames the folder holding the files - and commits and pushes the changes. &#160;Second user commits and pushes in changes before doing a Pull.</td>
+                    <td class="BodyE-Column1-Body1">64</td>
+                    <td class="BodyE-Column1-Body1">Both users modify the same file. One user renames the file , then the second user commits the file before doing a Pull.</td>
                     <td class="BodyE-Column1-Body1">&#160;</td>
                     <td class="BodyE-Column1-Body1">&#160;</td>
                     <td class="BodyE-Column1-Body1">&#160;</td>
@@ -929,28 +932,26 @@
                     <td class="BodyE-Column1-Body1">&#160;</td>
                     <td class="BodyD-Column1-Body1">&#160;</td>
                 </tr>
-                <tr class="Body-Body2">
+                <tr style="height: 15pt;" MadCap:conditions="SourceControl.multi-user,SourceControl.DetailedTesting" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">65</td>
+                    <td class="BodyE-Column1-Body2">Both users have files modified and one user renames the folder holding the files - and commits and pushes the changes. &#160;Second user commits and pushes in changes before doing a Pull.</td>
                     <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td colspan="7" class="BodyD-Column1-Body2">
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td colspan="7" class="BodyD-Column1-Body1">
                         <h2 colspan="5">Misc</h2>
                     </td>
                 </tr>
-                <tr style="height: 15pt;" MadCap:conditions="SourceControl.multi-user" class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">66</td>
-                    <td class="BodyE-Column1-Body1">
-                        <p class="p_3">Sending an Instant Message</p>
-                    </td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1">j n/a</td>
-                </tr>
                 <tr style="height: 15pt;" MadCap:conditions="SourceControl.multi-user" class="Body-Body2">
-                    <td class="BodyE-Column1-Body2">67</td>
+                    <td class="BodyE-Column1-Body2">66</td>
                     <td class="BodyE-Column1-Body2">
-                        <p class="p_3">IM User Status</p>
+                        <p class="p_3">Sending an Instant Message</p>
                     </td>
                     <td class="BodyE-Column1-Body2">&#160;</td>
                     <td class="BodyE-Column1-Body2">&#160;</td>
@@ -959,73 +960,95 @@
                     <td class="BodyE-Column1-Body2">&#160;</td>
                     <td class="BodyD-Column1-Body2">j n/a</td>
                 </tr>
-                <tr style="height: 15pt;" class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">68</td>
+                <tr style="height: 15pt;" MadCap:conditions="SourceControl.multi-user" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">67</td>
                     <td class="BodyE-Column1-Body1">
+                        <p class="p_3">IM User Status</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyD-Column1-Body1">j n/a</td>
+                </tr>
+                <tr style="height: 15pt;" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">68</td>
+                    <td class="BodyE-Column1-Body2">
                         <p class="p_3">Get latest on project Open</p>
                     </td>
-                    <td class="BodyE-Column1-Body1">j</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">n/a</td>
-                    <td class="BodyE-Column1-Body1">j</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1">j</td>
-                </tr>
-                <tr style="height: 15pt;" MadCap:conditions="SourceControl.DetailedTesting" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">j</td>
                     <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td colspan="7" class="BodyD-Column1-Body2">
+                    <td class="BodyE-Column1-Body2">n/a</td>
+                    <td class="BodyE-Column1-Body2">j</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyD-Column1-Body2">j</td>
+                </tr>
+                <tr style="height: 15pt;" MadCap:conditions="SourceControl.DetailedTesting" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td colspan="7" class="BodyD-Column1-Body1">
                         <h2>Advanced Functions</h2>
                     </td>
                 </tr>
-                <tr style="height: 15pt;" MadCap:conditions="SourceControl.DetailedTesting" class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">69</td>
-                    <td class="BodyE-Column1-Body1">Generate an output with 'Get Latest' checked and an import file with get latest checked</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1">j</td>
-                </tr>
                 <tr style="height: 15pt;" MadCap:conditions="SourceControl.DetailedTesting" class="Body-Body2">
-                    <td class="BodyE-Column1-Body2">71</td>
-                    <td class="BodyE-Column1-Body2">
+                    <td class="BodyE-Column1-Body2">69</td>
+                    <td class="BodyE-Column1-Body2">Generate an output with 'Get Latest' checked and an import file with get latest checked</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyD-Column1-Body2">j</td>
+                </tr>
+                <tr style="height: 15pt;" MadCap:conditions="SourceControl.DetailedTesting" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">71</td>
+                    <td class="BodyE-Column1-Body1">
                         <p class="p_3">Get latest when generating option in targets</p>
                     </td>
-                    <td class="BodyE-Column1-Body2">j</td>
-                    <td class="BodyE-Column1-Body2">j</td>
-                    <td class="BodyE-Column1-Body2">j</td>
-                    <td class="BodyE-Column1-Body2">j</td>
-                    <td class="BodyE-Column1-Body2">j</td>
-                    <td class="BodyD-Column1-Body2">j</td>
+                    <td class="BodyE-Column1-Body1">j</td>
+                    <td class="BodyE-Column1-Body1">j</td>
+                    <td class="BodyE-Column1-Body1">j</td>
+                    <td class="BodyE-Column1-Body1">j</td>
+                    <td class="BodyE-Column1-Body1">j</td>
+                    <td class="BodyD-Column1-Body1">j</td>
                 </tr>
-                <tr style="height: 15pt;" MadCap:conditions="SourceControl.DetailedTesting" class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">72</td>
-                    <td class="BodyE-Column1-Body1">
+                <tr style="height: 15pt;" MadCap:conditions="SourceControl.DetailedTesting" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">72</td>
+                    <td class="BodyE-Column1-Body2">
                         <p class="p_3">Get latest when generating command line</p>
                     </td>
-                    <td class="BodyE-Column1-Body1">j</td>
-                    <td class="BodyE-Column1-Body1">j</td>
-                    <td class="BodyE-Column1-Body1">j</td>
-                    <td class="BodyE-Column1-Body1">j</td>
-                    <td class="BodyE-Column1-Body1">j</td>
-                    <td class="BodyD-Column1-Body1">j</td>
+                    <td class="BodyE-Column1-Body2">j</td>
+                    <td class="BodyE-Column1-Body2">j</td>
+                    <td class="BodyE-Column1-Body2">j</td>
+                    <td class="BodyE-Column1-Body2">j</td>
+                    <td class="BodyE-Column1-Body2">j</td>
+                    <td class="BodyD-Column1-Body2">j</td>
                 </tr>
-                <tr style="height: 15pt;" MadCap:conditions="SourceControl.DetailedTesting" class="Body-Body2">
-                    <td class="BodyE-Column1-Body2">73</td>
-                    <td class="BodyE-Column1-Body2">
+                <tr style="height: 15pt;" MadCap:conditions="SourceControl.DetailedTesting" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">73</td>
+                    <td class="BodyE-Column1-Body1">
                         <p class="p_3">Bind a Project that has the same name as an Existing project in VC</p>
                     </td>
-                    <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyD-Column1-Body1">j</td>
+                </tr>
+                <tr style="height: 15pt;" MadCap:conditions="SourceControl.DetailedTesting" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">76</td>
+                    <td class="BodyE-Column1-Body2">Edit a topic and save (don't commit). Add a new topic, right click and check all then commit. Make sure the edited topic is commited also.</td>
+                    <td class="BodyE-Column1-Body2">j</td>
+                    <td class="BodyE-Column1-Body2">j</td>
+                    <td class="BodyE-Column1-Body2">j</td>
+                    <td class="BodyE-Column1-Body2">j</td>
+                    <td class="BodyE-Column1-Body2">j</td>
                     <td class="BodyD-Column1-Body2">j</td>
                 </tr>
                 <tr style="height: 15pt;" MadCap:conditions="SourceControl.DetailedTesting" class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">76</td>
-                    <td class="BodyE-Column1-Body1">Edit a topic and save (don't commit). Add a new topic, right click and check all then commit. Make sure the edited topic is commited also.</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1">Edit a topic and save (don't commit). Add a new topic, right click and commit only that one. Make sure the edited topic is not commited.</td>
                     <td class="BodyE-Column1-Body1">j</td>
                     <td class="BodyE-Column1-Body1">j</td>
                     <td class="BodyE-Column1-Body1">j</td>
@@ -1034,31 +1057,11 @@
                     <td class="BodyD-Column1-Body1">j</td>
                 </tr>
                 <tr style="height: 15pt;" MadCap:conditions="SourceControl.DetailedTesting" class="Body-Body2">
-                    <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td class="BodyE-Column1-Body2">Edit a topic and save (don't commit). Add a new topic, right click and commit only that one. Make sure the edited topic is not commited.</td>
-                    <td class="BodyE-Column1-Body2">j</td>
-                    <td class="BodyE-Column1-Body2">j</td>
-                    <td class="BodyE-Column1-Body2">j</td>
-                    <td class="BodyE-Column1-Body2">j</td>
-                    <td class="BodyE-Column1-Body2">j</td>
-                    <td class="BodyD-Column1-Body2">j</td>
-                </tr>
-                <tr style="height: 15pt;" MadCap:conditions="SourceControl.DetailedTesting" class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">77</td>
-                    <td class="BodyE-Column1-Body1">
+                    <td class="BodyE-Column1-Body2">77</td>
+                    <td class="BodyE-Column1-Body2">
                         <p class="p_3">Commit all + Add comment + Verify comments were added</p>
                     </td>
-                    <td class="BodyE-Column1-Body1">j</td>
-                    <td class="BodyE-Column1-Body1">j</td>
-                    <td class="BodyE-Column1-Body1">j</td>
-                    <td class="BodyE-Column1-Body1">j</td>
-                    <td class="BodyE-Column1-Body1">j</td>
-                    <td class="BodyD-Column1-Body1">j</td>
-                </tr>
-                <tr style="height: 15pt;" MadCap:conditions="SourceControl.DetailedTesting" class="Body-Body2">
-                    <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td class="BodyE-Column1-Body2">Commit all +&#160;Don't add comment + Verify we inject comments</td>
-                    <td class="BodyE-Column1-Body2">jj</td>
+                    <td class="BodyE-Column1-Body2">j</td>
                     <td class="BodyE-Column1-Body2">j</td>
                     <td class="BodyE-Column1-Body2">j</td>
                     <td class="BodyE-Column1-Body2">j</td>
@@ -1066,30 +1069,30 @@
                     <td class="BodyD-Column1-Body2">j</td>
                 </tr>
                 <tr style="height: 15pt;" MadCap:conditions="SourceControl.DetailedTesting" class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">78</td>
-                    <td class="BodyE-Column1-Body1">Import a project into Analyzer that is bound to source control </td>
                     <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1">Commit all +&#160;Don't add comment + Verify we inject comments</td>
+                    <td class="BodyE-Column1-Body1">jj</td>
+                    <td class="BodyE-Column1-Body1">j</td>
+                    <td class="BodyE-Column1-Body1">j</td>
+                    <td class="BodyE-Column1-Body1">j</td>
+                    <td class="BodyE-Column1-Body1">j</td>
                     <td class="BodyD-Column1-Body1">j</td>
                 </tr>
                 <tr style="height: 15pt;" MadCap:conditions="SourceControl.DetailedTesting" class="Body-Body2">
-                    <td class="BodyE-Column1-Body2">79</td>
-                    <td class="BodyE-Column1-Body2">
+                    <td class="BodyE-Column1-Body2">78</td>
+                    <td class="BodyE-Column1-Body2">Import a project into Analyzer that is bound to source control </td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyD-Column1-Body2">j</td>
+                </tr>
+                <tr style="height: 15pt;" MadCap:conditions="SourceControl.DetailedTesting" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">79</td>
+                    <td class="BodyE-Column1-Body1">
                         <p>Move a pending-add file and then delete it after it is moved</p>
                     </td>
-                    <td class="BodyE-Column1-Body2">j</td>
-                    <td class="BodyE-Column1-Body2">j</td>
-                    <td class="BodyE-Column1-Body2">n/a</td>
-                    <td class="BodyE-Column1-Body2">j</td>
-                    <td class="BodyE-Column1-Body2">j</td>
-                    <td class="BodyD-Column1-Body2">j</td>
-                </tr>
-                <tr style="height: 15pt;" MadCap:conditions="SourceControl.DetailedTesting" class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">80</td>
-                    <td class="BodyE-Column1-Body1">Move a pending-add folder with a file and then delete it after it is moved</td>
                     <td class="BodyE-Column1-Body1">j</td>
                     <td class="BodyE-Column1-Body1">j</td>
                     <td class="BodyE-Column1-Body1">n/a</td>
@@ -1098,8 +1101,8 @@
                     <td class="BodyD-Column1-Body1">j</td>
                 </tr>
                 <tr style="height: 15pt;" MadCap:conditions="SourceControl.DetailedTesting" class="Body-Body2">
-                    <td class="BodyE-Column1-Body2">81</td>
-                    <td class="BodyE-Column1-Body2">Rename a pending-add file and then commit</td>
+                    <td class="BodyE-Column1-Body2">80</td>
+                    <td class="BodyE-Column1-Body2">Move a pending-add folder with a file and then delete it after it is moved</td>
                     <td class="BodyE-Column1-Body2">j</td>
                     <td class="BodyE-Column1-Body2">j</td>
                     <td class="BodyE-Column1-Body2">n/a</td>
@@ -1108,8 +1111,8 @@
                     <td class="BodyD-Column1-Body2">j</td>
                 </tr>
                 <tr style="height: 15pt;" MadCap:conditions="SourceControl.DetailedTesting" class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">82</td>
-                    <td class="BodyE-Column1-Body1">Rename a pending-add file and then delete it</td>
+                    <td class="BodyE-Column1-Body1">81</td>
+                    <td class="BodyE-Column1-Body1">Rename a pending-add file and then commit</td>
                     <td class="BodyE-Column1-Body1">j</td>
                     <td class="BodyE-Column1-Body1">j</td>
                     <td class="BodyE-Column1-Body1">n/a</td>
@@ -1118,53 +1121,75 @@
                     <td class="BodyD-Column1-Body1">j</td>
                 </tr>
                 <tr style="height: 15pt;" MadCap:conditions="SourceControl.DetailedTesting" class="Body-Body2">
-                    <td class="BodyE-Column1-Body2">83</td>
-                    <td class="BodyE-Column1-Body2">Move a commited file and then delete it</td>
+                    <td class="BodyE-Column1-Body2">82</td>
+                    <td class="BodyE-Column1-Body2">Rename a pending-add file and then delete it</td>
                     <td class="BodyE-Column1-Body2">j</td>
                     <td class="BodyE-Column1-Body2">j</td>
+                    <td class="BodyE-Column1-Body2">n/a</td>
                     <td class="BodyE-Column1-Body2">j</td>
                     <td class="BodyE-Column1-Body2">j</td>
-                    <td class="BodyE-Column1-Body2">j</td>
-                    <td class="BodyD-Column1-Body2">
+                    <td class="BodyD-Column1-Body2">j</td>
+                </tr>
+                <tr style="height: 15pt;" MadCap:conditions="SourceControl.DetailedTesting" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">83</td>
+                    <td class="BodyE-Column1-Body1">Move a commited file and then delete it</td>
+                    <td class="BodyE-Column1-Body1">j</td>
+                    <td class="BodyE-Column1-Body1">j</td>
+                    <td class="BodyE-Column1-Body1">j</td>
+                    <td class="BodyE-Column1-Body1">j</td>
+                    <td class="BodyE-Column1-Body1">j</td>
+                    <td class="BodyD-Column1-Body1">
                         <p style="background-color: #ff0000;">1)bug not updating links (toc) issue with all</p>
                         <p style="background-color: #ff0000;">2)</p>
                     </td>
                 </tr>
-                <tr style="height: 15pt;" MadCap:conditions="SourceControl.DetailedTesting" class="Body-Body1">
-                    <td class="BodyE-Column1-Body1" style="background-color: #ff0000;">84</td>
-                    <td class="BodyE-Column1-Body1" style="background-color: #ff0000;">Move a modified file and then delete it</td>
-                    <td class="BodyE-Column1-Body1" style="background-color: #ff0000;">&#160;</td>
-                    <td class="BodyE-Column1-Body1" style="background-color: #ff0000;">&#160;</td>
-                    <td class="BodyE-Column1-Body1" style="background-color: #ff0000;">&#160;</td>
-                    <td class="BodyE-Column1-Body1" style="background-color: #ff0000;">&#160;</td>
-                    <td class="BodyE-Column1-Body1" style="background-color: #ff0000;">&#160;</td>
-                    <td class="BodyD-Column1-Body1" style="background-color: #ff0000;">97441</td>
+                <tr style="height: 15pt;" MadCap:conditions="SourceControl.DetailedTesting" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="background-color: #ff0000;">84</td>
+                    <td class="BodyE-Column1-Body2" style="background-color: #ff0000;">Move a modified file and then delete it</td>
+                    <td class="BodyE-Column1-Body2" style="background-color: #ff0000;">&#160;</td>
+                    <td class="BodyE-Column1-Body2" style="background-color: #ff0000;">&#160;</td>
+                    <td class="BodyE-Column1-Body2" style="background-color: #ff0000;">&#160;</td>
+                    <td class="BodyE-Column1-Body2" style="background-color: #ff0000;">&#160;</td>
+                    <td class="BodyE-Column1-Body2" style="background-color: #ff0000;">&#160;</td>
+                    <td class="BodyD-Column1-Body2" style="background-color: #ff0000;">97441</td>
                 </tr>
-                <tr style="height: 15pt;" class="Body-Body2">
-                    <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td colspan="5" class="BodyE-Column1-Body2">
+                <tr style="height: 15pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td colspan="5" class="BodyE-Column1-Body1">
                         <h2>Offline Testing</h2>
                     </td>
-                    <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td class="BodyD-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyD-Column1-Body1">&#160;</td>
                 </tr>
-                <tr style="height: 15pt;" class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">85</td>
-                    <td class="BodyE-Column1-Body1">
+                <tr style="height: 15pt;" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">85</td>
+                    <td class="BodyE-Column1-Body2">
                         <p class="p_3">Disconnect YOUR PC. Launch Flare and open a Bound Project.</p>
                     </td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyD-Column1-Body2">&#160;</td>
                 </tr>
-                <tr style="height: 15pt;" class="Body-Body2">
-                    <td class="BodyE-Column1-Body2">86</td>
-                    <td class="BodyE-Column1-Body2">
+                <tr style="height: 15pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">86</td>
+                    <td class="BodyE-Column1-Body1">
                         <p class="p_3">Open a bound Project. Disconnect YOUR PC. Do VC commands.</p>
                     </td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height: 15pt;" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">87</td>
+                    <td class="BodyE-Column1-Body2">
+                        <p class="p_3">Open a bound Project. Disconnect the SERVER. Do VC commands.</p>
+                    </td>
                     <td class="BodyE-Column1-Body2">&#160;</td>
                     <td class="BodyE-Column1-Body2">&#160;</td>
                     <td class="BodyE-Column1-Body2">&#160;</td>
@@ -1173,9 +1198,9 @@
                     <td class="BodyD-Column1-Body2">&#160;</td>
                 </tr>
                 <tr style="height: 15pt;" class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">87</td>
+                    <td class="BodyE-Column1-Body1">88</td>
                     <td class="BodyE-Column1-Body1">
-                        <p class="p_3">Open a bound Project. Disconnect the SERVER. Do VC commands.</p>
+                        <p class="p_3">Disconnect SERVER. Launch Flare and open a Bound Project</p>
                     </td>
                     <td class="BodyE-Column1-Body1">&#160;</td>
                     <td class="BodyE-Column1-Body1">&#160;</td>
@@ -1185,10 +1210,8 @@
                     <td class="BodyD-Column1-Body1">&#160;</td>
                 </tr>
                 <tr style="height: 15pt;" class="Body-Body2">
-                    <td class="BodyE-Column1-Body2">88</td>
-                    <td class="BodyE-Column1-Body2">
-                        <p class="p_3">Disconnect SERVER. Launch Flare and open a Bound Project</p>
-                    </td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
                     <td class="BodyE-Column1-Body2">&#160;</td>
                     <td class="BodyE-Column1-Body2">&#160;</td>
                     <td class="BodyE-Column1-Body2">&#160;</td>
@@ -1196,55 +1219,15 @@
                     <td class="BodyE-Column1-Body2">&#160;</td>
                     <td class="BodyD-Column1-Body2">&#160;</td>
                 </tr>
-                <tr style="height: 15pt;" class="Body-Body1">
+                <tr style="height: 32pt;" class="Body-Body1">
                     <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1">&#160;</td>
-                </tr>
-                <tr style="height: 32pt;" class="Body-Body2">
-                    <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td class="BodyD-Column1-Body2" colspan="7">
+                    <td class="BodyD-Column1-Body1" colspan="7">
                         <h2>NEW&#160;IDEAS or ISSUES</h2>
                     </td>
                 </tr>
-                <tr style="height: 15pt;" class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">Make sure checked out branch remains selected after reopening Flare project</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1">j</td>
-                </tr>
                 <tr style="height: 15pt;" class="Body-Body2">
                     <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td class="BodyE-Column1-Body2">Make sure file is still in modified state after reopening</td>
-                    <td class="BodyE-Column1-Body2">j</td>
-                    <td class="BodyE-Column1-Body2">j</td>
-                    <td class="BodyE-Column1-Body2">n/a</td>
-                    <td class="BodyE-Column1-Body2">j</td>
-                    <td class="BodyE-Column1-Body2">j</td>
-                    <td class="BodyD-Column1-Body2">j</td>
-                </tr>
-                <tr style="height: 15pt;" class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">Make sure we get warning that changes will be discard if file is not committed when switching branches</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1">j</td>
-                </tr>
-                <tr style="height: 15pt;" class="Body-Body2">
-                    <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td class="BodyE-Column1-Body2">Make a change in one branch commit and push, on another machine in a different branch pull and make sure changes dont affect your different branch</td>
+                    <td class="BodyE-Column1-Body2">Make sure checked out branch remains selected after reopening Flare project</td>
                     <td class="BodyE-Column1-Body2">&#160;</td>
                     <td class="BodyE-Column1-Body2">&#160;</td>
                     <td class="BodyE-Column1-Body2">&#160;</td>
@@ -1254,7 +1237,27 @@
                 </tr>
                 <tr style="height: 15pt;" class="Body-Body1">
                     <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">Make a change in one branch commit and push, on another machine in a different branch pull then switch to same branch and make sure changes didn't come in</td>
+                    <td class="BodyE-Column1-Body1">Make sure file is still in modified state after reopening</td>
+                    <td class="BodyE-Column1-Body1">j</td>
+                    <td class="BodyE-Column1-Body1">j</td>
+                    <td class="BodyE-Column1-Body1">n/a</td>
+                    <td class="BodyE-Column1-Body1">j</td>
+                    <td class="BodyE-Column1-Body1">j</td>
+                    <td class="BodyD-Column1-Body1">j</td>
+                </tr>
+                <tr style="height: 15pt;" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">Make sure we get warning that changes will be discard if file is not committed when switching branches</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyD-Column1-Body2">j</td>
+                </tr>
+                <tr style="height: 15pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1">Make a change in one branch commit and push, on another machine in a different branch pull and make sure changes dont affect your different branch</td>
                     <td class="BodyE-Column1-Body1">&#160;</td>
                     <td class="BodyE-Column1-Body1">&#160;</td>
                     <td class="BodyE-Column1-Body1">&#160;</td>
@@ -1264,17 +1267,17 @@
                 </tr>
                 <tr style="height: 15pt;" class="Body-Body2">
                     <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td class="BodyE-Column1-Body2">Add Topic remains when switching branches</td>
-                    <td class="BodyE-Column1-Body2">?</td>
-                    <td class="BodyE-Column1-Body2">?</td>
-                    <td class="BodyE-Column1-Body2">?</td>
-                    <td class="BodyE-Column1-Body2">?</td>
-                    <td class="BodyE-Column1-Body2">?</td>
-                    <td class="BodyD-Column1-Body2">?</td>
+                    <td class="BodyE-Column1-Body2">Make a change in one branch commit and push, on another machine in a different branch pull then switch to same branch and make sure changes didn't come in</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyD-Column1-Body2">j</td>
                 </tr>
                 <tr style="height: 15pt;" class="Body-Body1">
                     <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">Modify Topic switch to another Branch then back</td>
+                    <td class="BodyE-Column1-Body1">Add Topic remains when switching branches</td>
                     <td class="BodyE-Column1-Body1">?</td>
                     <td class="BodyE-Column1-Body1">?</td>
                     <td class="BodyE-Column1-Body1">?</td>
@@ -1284,7 +1287,7 @@
                 </tr>
                 <tr style="height: 15pt;" class="Body-Body2">
                     <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td class="BodyE-Column1-Body2">Modify Topic switch to another Branch make modify another file then back</td>
+                    <td class="BodyE-Column1-Body2">Modify Topic switch to another Branch then back</td>
                     <td class="BodyE-Column1-Body2">?</td>
                     <td class="BodyE-Column1-Body2">?</td>
                     <td class="BodyE-Column1-Body2">?</td>
@@ -1294,58 +1297,58 @@
                 </tr>
                 <tr style="height: 15pt;" class="Body-Body1">
                     <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">Modify &gt; Commit Topic switch to another Branch make modify same file &gt;&#160;Commit then go back</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">j</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1">j</td>
+                    <td class="BodyE-Column1-Body1">Modify Topic switch to another Branch make modify another file then back</td>
+                    <td class="BodyE-Column1-Body1">?</td>
+                    <td class="BodyE-Column1-Body1">?</td>
+                    <td class="BodyE-Column1-Body1">?</td>
+                    <td class="BodyE-Column1-Body1">?</td>
+                    <td class="BodyE-Column1-Body1">?</td>
+                    <td class="BodyD-Column1-Body1">?</td>
                 </tr>
                 <tr style="height: 15pt;" class="Body-Body2">
                     <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td class="BodyE-Column1-Body2">Modify &gt;&#160;Commit Topic switch to another Branch add file then back</td>
+                    <td class="BodyE-Column1-Body2">Modify &gt; Commit Topic switch to another Branch make modify same file &gt;&#160;Commit then go back</td>
                     <td class="BodyE-Column1-Body2">&#160;</td>
                     <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">j</td>
                     <td class="BodyE-Column1-Body2">&#160;</td>
                     <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td class="BodyD-Column1-Body2"><span style="background-color: #ff0000;"><MadCap:annotation MadCap:createDate="2015-01-18T16:16:37.3605354-08:00" MadCap:creator="Harkins" MadCap:initials="HA" MadCap:comment="git lets uncommitted file carry over" MadCap:editor="Harkins" MadCap:editDate="2015-01-18T16:16:54.6725256-08:00">git keeps these so they will commit into whatever is checked out branch</MadCap:annotation></span>
+                    <td class="BodyD-Column1-Body2">j</td>
+                </tr>
+                <tr style="height: 15pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1">Modify &gt;&#160;Commit Topic switch to another Branch add file then back</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyD-Column1-Body1"><span style="background-color: #ff0000;"><MadCap:annotation MadCap:createDate="2015-01-18T16:16:37.3605354-08:00" MadCap:creator="Harkins" MadCap:initials="HA" MadCap:comment="git lets uncommitted file carry over" MadCap:editor="Harkins" MadCap:editDate="2015-01-18T16:16:54.6725256-08:00">git keeps these so they will commit into whatever is checked out branch</MadCap:annotation></span>
                     </td>
                 </tr>
-                <tr style="height: 15pt;" class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">Modify then Commit Topic switch to another Branch then back</td>
-                    <td class="BodyE-Column1-Body1">j</td>
-                    <td class="BodyE-Column1-Body1">j</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">j</td>
-                    <td class="BodyE-Column1-Body1">j</td>
-                    <td class="BodyD-Column1-Body1">j</td>
-                </tr>
                 <tr style="height: 15pt;" class="Body-Body2">
                     <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td class="BodyE-Column1-Body2">Modify  then Commit Topic switch to another Branch make modify another file then back</td>
-                    <td class="BodyE-Column1-Body2">?</td>
-                    <td class="BodyE-Column1-Body2">?</td>
-                    <td class="BodyE-Column1-Body2">?</td>
-                    <td class="BodyE-Column1-Body2">?</td>
-                    <td class="BodyE-Column1-Body2">?</td>
-                    <td class="BodyD-Column1-Body2">?</td>
+                    <td class="BodyE-Column1-Body2">Modify then Commit Topic switch to another Branch then back</td>
+                    <td class="BodyE-Column1-Body2">j</td>
+                    <td class="BodyE-Column1-Body2">j</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">j</td>
+                    <td class="BodyE-Column1-Body2">j</td>
+                    <td class="BodyD-Column1-Body2">j</td>
                 </tr>
                 <tr style="height: 15pt;" class="Body-Body1">
                     <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">Modify  then Commit Topic switch to another Branch make modify same file then back</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1">Modify  then Commit Topic switch to another Branch make modify another file then back</td>
+                    <td class="BodyE-Column1-Body1">?</td>
+                    <td class="BodyE-Column1-Body1">?</td>
+                    <td class="BodyE-Column1-Body1">?</td>
+                    <td class="BodyE-Column1-Body1">?</td>
+                    <td class="BodyE-Column1-Body1">?</td>
+                    <td class="BodyD-Column1-Body1">?</td>
                 </tr>
                 <tr style="height: 15pt;" class="Body-Body2">
                     <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td class="BodyE-Column1-Body2">Modify  then Commit Topic switch to another Branch add file then back</td>
+                    <td class="BodyE-Column1-Body2">Modify  then Commit Topic switch to another Branch make modify same file then back</td>
                     <td class="BodyE-Column1-Body2">&#160;</td>
                     <td class="BodyE-Column1-Body2">&#160;</td>
                     <td class="BodyE-Column1-Body2">&#160;</td>
@@ -1355,27 +1358,7 @@
                 </tr>
                 <tr style="height: 15pt;" class="Body-Body1">
                     <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">is there a way to see status of all branches?</td>
-                    <td class="BodyE-Column1-Body1">NV</td>
-                    <td class="BodyE-Column1-Body1">NV</td>
-                    <td class="BodyE-Column1-Body1">NV</td>
-                    <td class="BodyE-Column1-Body1">NV</td>
-                    <td class="BodyE-Column1-Body1">NV</td>
-                    <td class="BodyD-Column1-Body1">NV</td>
-                </tr>
-                <tr style="height: 15pt;" class="Body-Body2">
-                    <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td class="BodyE-Column1-Body2">Modify then Pull then Commit (should get conflict committing)</td>
-                    <td class="BodyE-Column1-Body2">?</td>
-                    <td class="BodyE-Column1-Body2">?</td>
-                    <td class="BodyE-Column1-Body2">?</td>
-                    <td class="BodyE-Column1-Body2">?</td>
-                    <td class="BodyE-Column1-Body2">?</td>
-                    <td class="BodyD-Column1-Body2">?</td>
-                </tr>
-                <tr style="height: 15pt;" class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">Pull then Modify then Commit (should not get diff)</td>
+                    <td class="BodyE-Column1-Body1">Modify  then Commit Topic switch to another Branch add file then back</td>
                     <td class="BodyE-Column1-Body1">&#160;</td>
                     <td class="BodyE-Column1-Body1">&#160;</td>
                     <td class="BodyE-Column1-Body1">&#160;</td>
@@ -1385,27 +1368,7 @@
                 </tr>
                 <tr style="height: 15pt;" class="Body-Body2">
                     <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td class="BodyE-Column1-Body2">Modify then Pull then Commit then Push (should get conflict committing)</td>
-                    <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td class="BodyD-Column1-Body2">&#160;</td>
-                </tr>
-                <tr style="height: 15pt;" class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">Pull then Modify then Commit then Push (should not get diff)</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1">&#160;</td>
-                </tr>
-                <tr style="height: 15pt;" class="Body-Body2">
-                    <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td class="BodyE-Column1-Body2">Merge changes from one branch to another</td>
+                    <td class="BodyE-Column1-Body2">is there a way to see status of all branches?</td>
                     <td class="BodyE-Column1-Body2">NV</td>
                     <td class="BodyE-Column1-Body2">NV</td>
                     <td class="BodyE-Column1-Body2">NV</td>
@@ -1415,7 +1378,27 @@
                 </tr>
                 <tr style="height: 15pt;" class="Body-Body1">
                     <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">committing just this one when some are dirty and some are saved</td>
+                    <td class="BodyE-Column1-Body1">Modify then Pull then Commit (should get conflict committing)</td>
+                    <td class="BodyE-Column1-Body1">?</td>
+                    <td class="BodyE-Column1-Body1">?</td>
+                    <td class="BodyE-Column1-Body1">?</td>
+                    <td class="BodyE-Column1-Body1">?</td>
+                    <td class="BodyE-Column1-Body1">?</td>
+                    <td class="BodyD-Column1-Body1">?</td>
+                </tr>
+                <tr style="height: 15pt;" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">Pull then Modify then Commit (should not get diff)</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height: 15pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1">Modify then Pull then Commit then Push (should get conflict committing)</td>
                     <td class="BodyE-Column1-Body1">&#160;</td>
                     <td class="BodyE-Column1-Body1">&#160;</td>
                     <td class="BodyE-Column1-Body1">&#160;</td>
@@ -1425,7 +1408,47 @@
                 </tr>
                 <tr style="height: 15pt;" class="Body-Body2">
                     <td class="BodyE-Column1-Body2">&#160;</td>
-                    <td class="BodyE-Column1-Body2">Make something unique in at least two branchs, then after importing to new user, do all remotes show their information, switch to other branchs</td>
+                    <td class="BodyE-Column1-Body2">Pull then Modify then Commit then Push (should not get diff)</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height: 15pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1">Merge changes from one branch to another</td>
+                    <td class="BodyE-Column1-Body1">NV</td>
+                    <td class="BodyE-Column1-Body1">NV</td>
+                    <td class="BodyE-Column1-Body1">NV</td>
+                    <td class="BodyE-Column1-Body1">NV</td>
+                    <td class="BodyE-Column1-Body1">NV</td>
+                    <td class="BodyD-Column1-Body1">NV</td>
+                </tr>
+                <tr style="height: 15pt;" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">committing just this one when some are dirty and some are saved</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height: 15pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1">Make something unique in at least two branchs, then after importing to new user, do all remotes show their information, switch to other branchs</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height: 15pt;" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
                     <td class="BodyE-Column1-Body2">&#160;</td>
                     <td class="BodyE-Column1-Body2">&#160;</td>
                     <td class="BodyE-Column1-Body2">&#160;</td>
@@ -1514,24 +1537,14 @@
                     <td class="BodyD-Column1-Body2">&#160;</td>
                 </tr>
                 <tr style="height: 15pt;" class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1">&#160;</td>
-                </tr>
-                <tr style="height: 15pt;" class="Body-Body2">
-                    <td class="BodyB-Column1-Body2">&#160;</td>
-                    <td class="BodyB-Column1-Body2">&#160;</td>
-                    <td class="BodyB-Column1-Body2">&#160;</td>
-                    <td class="BodyB-Column1-Body2">&#160;</td>
-                    <td class="BodyB-Column1-Body2">&#160;</td>
-                    <td class="BodyB-Column1-Body2">&#160;</td>
-                    <td class="BodyB-Column1-Body2">&#160;</td>
-                    <td class="BodyA-Column1-Body2">&#160;</td>
+                    <td class="BodyB-Column1-Body1">&#160;</td>
+                    <td class="BodyB-Column1-Body1">&#160;</td>
+                    <td class="BodyB-Column1-Body1">&#160;</td>
+                    <td class="BodyB-Column1-Body1">&#160;</td>
+                    <td class="BodyB-Column1-Body1">&#160;</td>
+                    <td class="BodyB-Column1-Body1">&#160;</td>
+                    <td class="BodyB-Column1-Body1">&#160;</td>
+                    <td class="BodyA-Column1-Body1">&#160;</td>
                 </tr>
             </tbody>
         </table>
